@@ -5,12 +5,20 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root_password
       MYSQL_DATABASE: contact_vault
-      # Explicitly setting this for dev access
       MYSQL_ROOT_HOST: '%'
     ports:
       - "3306:3306"
     volumes:
       - mysql_dev_data:/var/lib/mysql
+
+  adminer:
+    image: adminer
+    container_name: surya_adminer
+    restart: always
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
 
 volumes:
   mysql_dev_data:
