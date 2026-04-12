@@ -43,3 +43,11 @@ clean: ## Clean up build artifacts and Docker volumes
 	mvn clean
 	$(COMPOSE_BIN) -f $(INFRA_FILE) down -v
 	$(DOCKER_BIN) system prune -f
+
+check: ## Check environment versions
+	@echo "Checking Java version..."
+	@java -version
+	@echo "\nChecking Maven version..."
+	@mvn -version
+	@echo "\nChecking Docker version..."
+	@docker compose version
