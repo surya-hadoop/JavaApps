@@ -1,0 +1,16 @@
+services:
+  db:
+    image: mysql/mysql-server:8.0
+    container_name: surya_mysql_dev
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: contact_vault
+      # Explicitly setting this for dev access
+      MYSQL_ROOT_HOST: '%'
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_dev_data:/var/lib/mysql
+
+volumes:
+  mysql_dev_data:
