@@ -1,0 +1,25 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.format.enabled": true,
+    "java.jdt.ls.vmargs": "-Xmx1G -XX:+UseG1GC",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit" // Clean up imports automatically
+    },
+    "java.completion.favoriteStaticMembers": [
+        "org.junit.Assert.*",
+        "org.mockito.Mockito.*"
+    ],
+    "java.debug.settings.console": "internalConsole",
+    "[java]": {
+        "editor.suggestSelection": "first",
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "files.exclude": {
+        "**/*.class": true,
+        "target/": true, // Hide target folder to keep the sidebar clean
+        "**/.git": true
+    },
+    "maven.terminal.useInteractiveMode": false
+}

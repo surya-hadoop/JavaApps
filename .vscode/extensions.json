@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "vscjava.vscode-java-pack",
+    "vscjava.vscode-maven",
+    "ms-azuretools.vscode-docker",
+    "cweijan.vscode-mysql-client2",
+    "mechatroner.rainbow-csv", // Colors CSV columns - great for contacts.csv
+    "christian-kohler.path-intellisense" // Helps him find file paths without typos
+  ]
+}
