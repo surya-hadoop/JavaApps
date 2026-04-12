@@ -51,6 +51,13 @@ make clean
 make infra-up
 ```
 
+### 🌐 Visual Database Management
+A web-based UI (Adminer) is available to visually inspect the database:
+* **URL**: `http://localhost:8080`
+* **Server**: `db`
+* **Username**: `root`
+* **Password**: `root_password`
+
 ### Step 4: Execute the Test Pyramid
 Run the full suite of Unit and Integration tests. The suite includes a resilient retry loop to wait for MySQL readiness:
 ```bash
