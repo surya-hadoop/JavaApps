@@ -1,0 +1,27 @@
+# --- Java/Maven ---
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# # --- VS Code ---
+# .vscode/
+# !.vscode/extensions.json
+# !.vscode/settings.json
+# !.vscode/launch.json
+# !.vscode/tasks.json
+# *.code-workspace
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+# --- Docker ---
+.docker/
+# Exclude local DB data if you mount volumes in the current dir
+mysql_data/
+
+# --- Temp/Logs ---
+*.log
+tmp/

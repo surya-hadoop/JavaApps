@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Run Migrator (Local)",
+            "request": "launch",
+            "mainClass": "ContactMigrator",
+            "projectName": "ContactMigrator",
+            "env": {
+                "DB_HOST": "localhost",
+                "DB_PORT": "3306",
+                "DB_NAME": "contact_vault",
+                "DB_USER": "root",
+                "DB_PASSWORD": "root_password"
+            }
+        }
+    ]
+}
